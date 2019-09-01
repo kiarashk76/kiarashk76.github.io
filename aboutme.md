@@ -26,7 +26,7 @@ title: About me
 
 * email: 
   - [kasirikiarash@gmail.com](kasirikiarash@gmail.com)
-  - [kasirikiarash@ualberta.com](aghakasi@ualberta.com)
+  - [kasirikiarash@ualberta.ca](aghakasi@ualberta.com)
   - [kiarash_aghakasiri@comp.iust.ac.ir](kiarash_aghakasiri@comp.iust.ac.ir)
 
 
