@@ -5,18 +5,16 @@ title: About me
 ---
 
 #### Research Interest
-* Machine Learning / Deep Learning/ Reinforcement Learning
-* Computer Vision
-* Natural Language Processing
-* Data Mining / Bioinformatics
+* Machine Learning / Reinforcement Learning / Deep Learning
+* Artificial Intelligence / Computer Vision / Natural Language Processing
 
 #### Academic Background
 
 * M.S in Computing Science (Expected September 2019)
   - I am continuing my education as a master student of Computing Science in University of Alberta from Fall 2019
   
-* B.Sc in Computer Engineering (September 2015 - Expected July 2019)
-  - I have almost finished my undergraduate education in Computer Engineering in Iran University of Science and Technology
+* B.Sc in Computer Engineering (September 2015 - July 2019)
+  - I have got BSc. degree in Computer Engineering from Iran University of Science and Technology
   
 * Pre-University and High School (September 2008 - June 2015)
   - I have studied in Allameh-Helli (NODET) school, National Organization for Development of Exceptional Talent
