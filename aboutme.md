@@ -25,7 +25,7 @@ title: About me
 * email: 
   - <kasirikiarash@gmail.com>  
   - <kasirikiarash@ualberta.ca>
-
+* office: CSC 3-23
 
 #### Resume
 * you can download my [CV](https://github.com/kiarash97/kiarash97.github.io/blob/master/CV.pdf) here
