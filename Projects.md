@@ -5,7 +5,9 @@ title: Projects
 ---
 
 ### M.S Projects
-  Will be added soon !
+#### Research Projects
+
+* Applying Variance Reduction Methods to Policy Evaluation for Off-Policy Setting
 
 ### B.Sc Projects
 
