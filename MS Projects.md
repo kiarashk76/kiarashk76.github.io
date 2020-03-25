@@ -5,7 +5,7 @@ title: M.S Projects
 ---
 
 #### Course Projects
-* Reinforcement Learning II instructed by Dr. [Richard S. Sutton](http://incompleteideas.net/):
+* Reinforcement Learning II instructed by Dr. [Richard S. Sutton](http://incompleteideas.net/):\n
   Investigating Sensitivity of Step Size and Performance in True online TD(λ) for Different Values of λ. you can download the [report](https://github.com/kiarashk76/kiarashk76.github.io/blob/master/RL2.pdf) here.
   
 * Intro to Machine Learning instructed by Dr. [Martha White](https://webdocs.cs.ualberta.ca/~whitem/):
