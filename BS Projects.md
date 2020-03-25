@@ -1,7 +1,4 @@
----
-layout: page
 
----
 
 ### B.Sc Projects
 
