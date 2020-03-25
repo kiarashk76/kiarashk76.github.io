@@ -32,7 +32,9 @@ title: Home
 
 # List of links in the navigation bar
 navbar-links:
-  Projects: "Projects"
+  Projects: 
+    - BSc (IUST): "BS Projects"
+    - MSc (UAlberta): "MS Projects"
   Teaching Assistantships:
     - BSc (IUST): "BS TA"
     - MSc (UAlberta) : "MS TA"
@@ -84,7 +86,7 @@ author:
 social-network-links:
   rss: true
 # gmail: "kasirikiarash@gmail.com"
-# facebook: deanattali
+  facebook: kiarash.aghakasiri
   github: kiarash97
 #  twitter: daattali
 #  reddit: yourname
@@ -169,7 +171,7 @@ title-separator: "-"
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Vancouver"
+timezone: "Canada/Edmonton"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
