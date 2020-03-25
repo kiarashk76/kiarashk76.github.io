@@ -1,11 +1,8 @@
 ---
 layout: page
-title: 
+title: B.Sc Projects
 
 ---
-
-### B.Sc Projects
-
 #### Thesis Project
 * Image Captioning for Translated MSCoCo Dataset (March 2019 - Persent), Supervised by Dr. Nasser Mozayani and [Dr. Sauleh eetemadi](https://sauleh.github.io/students/)
   - I worked with another B.Sc student on my thesis project. We use MSCoCo dataset for image captioning and translated captions into Persion, as there is no dataset for this problem in Persian (We will publish the dataset soon). Then we use [Show, Attend, Model: Neural Image Caption Generation with Visual Attention](https://arxiv.org/pdf/1502.03044.pdf) model, then we used a [Tensorflow implementation](https://github.com/coldmanck/show-attend-and-tell) with some modifications. We trained the model on Google Colaboratory GPU. You can view the Jupyter nootebook file here. [(Google Colab view only link)](https://colab.research.google.com/drive/1GkhnZKpJYxxHiSigBcdKFyIv8WdYYQ_n). Here is a good and a bad result:
