@@ -32,4 +32,4 @@ title: About me
 
 
 #### Recreational Activities
-* Ice Skating, Playing Piano, Going to Gym,
+* Ice Skating, Playing Piano, Going to Gym.
