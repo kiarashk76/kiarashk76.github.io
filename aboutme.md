@@ -12,10 +12,10 @@ title: About me
 #### Academic Background
 
 * MSc in Computing Science (September 2019)
-  - I am continuing my education as a master student in Computing Science at University of Alberta from Fall 2019 under supervision of Dr. [Martin Müller](https://webdocs.cs.ualberta.ca/~mmueller/)
+  - I am continuing my education as a master student in Computing Science at University of Alberta from Fall 2019 under supervision of [Dr. Martin Müller](https://webdocs.cs.ualberta.ca/~mmueller/)
   
 * BSc in Computer Engineering (September 2015 - July 2019) 
-  - I have got BSc degree in Computer Engineering from Iran University of Science and Technology ybder supervision of Dr. [Nasser Mozayani](https://scholar.google.com/citations?user=LAAM5tEAAAAJ&hl=en)
+  - I have got BSc degree in Computer Engineering from Iran University of Science and Technology ybder supervision of [Dr. Nasser Mozayani](https://scholar.google.com/citations?user=LAAM5tEAAAAJ&hl=en)
   
 * Pre-University and High School (September 2008 - June 2015)
   - I have studied in Allameh-Helli (NODET) school, National Organization for Development of Exceptional Talent
