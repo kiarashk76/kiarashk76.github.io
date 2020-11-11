@@ -8,8 +8,8 @@ title: M.S Projects
 * Reinforcement Learning I instructed by Dr. [Martha White](https://webdocs.cs.ualberta.ca/~whitem/):    
   Is heteroscedastic regression a sound way to approximate model uncertainty? Working with 
   [Farnaz Kohankhaki](https://github.com/farnazkohankhaki), 
-  [Amirmohsen Sattarifard](https://www.linkedin.com/in/amirmohsen-sattarifard-1b9515a4?originalSubdomain=ca)
-  [Bedir Tapkan](https://github.com/BedirT)
+  [Amirmohsen Sattarifard](https://www.linkedin.com/in/amirmohsen-sattarifard-1b9515a4?originalSubdomain=ca),
+  [Bedir Tapkan](https://github.com/BedirT), and
   [Weicong Yuan](https://www.linkedin.com/in/weicong-yuan-43315419b?originalSubdomain=ca)
   \
   You can download the [proposal](https://github.com/kiarashk76/kiarashk76.github.io/blob/master/RL1_Proposal.pdf) here.
