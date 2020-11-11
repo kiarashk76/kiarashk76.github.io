@@ -90,7 +90,7 @@ social-network-links:
   github: kiarashk76
 #  twitter: daattali
 #  reddit: yourname
-#  linkedin: kiarash.aghakasiri
+ linkedin: kiarash-aghakasiri
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
@@ -106,7 +106,7 @@ social-network-links:
 share-links-active:
 #   twitter: true
 #   facebook: true
-#   linkedin: true
+  linkedin: true
   github: true
 
 # How to display the link to the website in the footer
