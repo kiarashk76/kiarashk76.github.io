@@ -32,4 +32,4 @@ title: About me
 
 
 #### Recreational Activities
-* Walking around in the Gym, Playing some piano, Falling in the ice skating arena.
+* Walking around in the Gym, Playing some piano, Falling in the ice skating arena, barely understanding some stuff about relativity theory, winning sone chess game in a while.
