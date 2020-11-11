@@ -5,16 +5,17 @@ title: About me
 ---
 
 #### Research Interest
-* Machine Learning / Reinforcement Learning / Deep Learning
-* Artificial Intelligence / Computer Vision / Natural Language Processing
+* Reinforcement Learning / Artificial Intelligence
+* Model-Based RL / Planning in Imperfect Domains
+* My goal is to design an RL agent that can adapt itself to any inaccuracy in the model. So, the agent should be able to use its model and the online interactions with the environment in the best way possible to capture model inaccuracies and update the model if needed or just ignore the inaccuracies during planning.
 
 #### Academic Background
 
 * MSc in Computing Science (September 2019)
-  - I am continuing my education as a master student of Computing Science in University of Alberta from Fall 2019
+  - I am continuing my education as a master student in Computing Science at University of Alberta from Fall 2019 under supervision of Dr. [Martin Müller](https://webdocs.cs.ualberta.ca/~mmueller/)
   
-* BSc in Computer Engineering (September 2015 - July 2019)
-  - I have got BSc degree in Computer Engineering from Iran University of Science and Technology
+* BSc in Computer Engineering (September 2015 - July 2019) 
+  - I have got BSc degree in Computer Engineering from Iran University of Science and Technology ybder supervision of Dr. [Nasser Mozayani](https://scholar.google.com/citations?user=LAAM5tEAAAAJ&hl=en)
   
 * Pre-University and High School (September 2008 - June 2015)
   - I have studied in Allameh-Helli (NODET) school, National Organization for Development of Exceptional Talent
@@ -23,7 +24,6 @@ title: About me
 #### Contact Information
 
 * email: 
-  - <kasirikiarash@gmail.com>  
   - <kasirikiarash@ualberta.ca>
 * office: CSC 3-23
 
@@ -32,4 +32,4 @@ title: About me
 
 
 #### Recreational Activities
-* Ice Skating, Playing Piano, Going to Gym.
+* Walking around in the Gym, Playing some piano, Falling in the ice skating arena.
