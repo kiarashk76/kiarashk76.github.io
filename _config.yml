@@ -35,12 +35,12 @@ navbar-links:
   Projects: 
     - BSc (IUST): "BS Projects"
     - MSc (UAlberta): "MS Projects"
-  Teaching Assistantships:
+  TA:
     - BSc (IUST): "BS TA"
     - MSc (UAlberta) : "MS TA"
-  Personal Achievements: "achievements"
+  Achievements: "achievements"
   Publication: "publication"
-  About Me / Contact: "aboutme"
+  About Me: "aboutme"
   
 
 # Image to show in the navigation bar - image must be a square (width = height)
