@@ -5,6 +5,9 @@ title: M.S Projects
 ---
 
 #### Course Projects
+* Reinforcement Learning I instructed by Dr. [Martha White](https://webdocs.cs.ualberta.ca/~whitem/):    
+  Is heteroscedastic regression a sound way to approximate model uncertainty? [proposal](https://github.com/kiarashk76/kiarashk76.github.io/blob/master/RL1_proposal.pdf) here.
+  
 * Reinforcement Learning II instructed by Dr. [Richard S. Sutton](http://incompleteideas.net/):    
   Investigating Sensitivity of Step Size and Performance in True online TD(λ) for Different Values of λ. you can download the [report](https://github.com/kiarashk76/kiarashk76.github.io/blob/master/RL2.pdf) here.
   
