@@ -10,7 +10,7 @@ title: My Teaching Assistantship History in M.S
 
 * __Basics of Machine Learning__ (University of Alberta)
   - (January 2020 - Expected April 2020)
-  - Instructor: Dr. [Martha White](https://webdocs.cs.ualberta.ca/~whitem/)
+  - Instructor: [Dr. Martha White](https://webdocs.cs.ualberta.ca/~whitem/)
   - Teaching basics of statistics (MLE, MAP), function optimization, classification, regression
   
 * __Introduction to the Foundations of Computation I__ (University of Alberta)
