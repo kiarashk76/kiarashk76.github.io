@@ -28,7 +28,7 @@ title: About me
 * office: CSC 3-23
 
 #### Resume
-* you can download my [CV](https://kiarashk76.github.io/CV.pdf) here
+* you can download my [CV](https://kiarashk76.github.io/docs/CV.pdf) here
 
 
 #### Recreational Activities
