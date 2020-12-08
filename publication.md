@@ -3,4 +3,4 @@ layout: page
 title: Publication
 
 ---
-* _Hopefully will be here soon_
+Fatemeh Karimkhani, H. Rahmani, Arezoo Zare, Raana Sahebnassagh and Kiarash Aghakasiri: Tarvajeh: Word association norms for Persian words. In: Journal of Psycholinguistic Research, 2020
