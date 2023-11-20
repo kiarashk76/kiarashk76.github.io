@@ -3,6 +3,10 @@ layout: page
 title: M.S Projects
 
 ---
+#### Thesis: Monte Carlo Tree Search in the Presence of Model Uncertainty
+Monte Carlo Tree Search (MCTS) is an extremely successful search-based frame- work for decision making. With an accurate simulator of the environment’s dynamics, it can achieve great performance in many games and non-games applications. However, without a perfect simulator, the performance degradation is so high that it can make the framework almost useless. Therefore, we propose two methods to improve the performance of MCTS in such a scenario: Deep Q-Network MCTS (DQMCTS) and Uncertainty Adapted MCTS (UAMCTS). In the former, we use the model-free algorithm DQN to evaluate the leaf nodes in the search tree. Although this approach shows promising improvement over baseline MCTS, our results show that there is still more room for improvement. In UAMCTS, we take a more fundamental approach and change the behavior of MCTS’s components to directly take the model incorrectness into account. Our results show that with an accurate measure of model incorrectness, UAMCTS can achieve the performance of MCTS with a perfect simulator in some cases. Even with a poor measure of model error, UAMCTS can still outperform plain MCTS with an imperfect simulator.
+
+You can download my [thesis](https://era.library.ualberta.ca/items/cf9b3756-c4ca-4260-b20f-984f851fa0df) here.
 
 #### Course Projects
 * [Reinforcement Learning I](https://marthawhite.github.io/rlgrad/) instructed by [Dr. Martha White](https://webdocs.cs.ualberta.ca/~whitem/):    
@@ -12,7 +16,7 @@ title: M.S Projects
   [Bedir Tapkan](https://github.com/BedirT), and
   [Weicong Yuan](https://www.linkedin.com/in/weicong-yuan-43315419b?originalSubdomain=ca)
   \
-  You can download the [proposal](https://kiarashk76.github.io/docs/RL1_Proposal.pdf) here.
+  You can download the [report](https://kiarashk76.github.io/docs/Heteroscedastic_Regression___ICML_submission_v1-compressed.pdf) here.
   
 * [Reinforcement Learning II](https://drive.google.com/drive/folders/0B3w765rOKuKANmxNbXdwaE1YU1k) instructed by [Dr. Richard S. Sutton](http://incompleteideas.net/):    
   Investigating Sensitivity of Step Size and Performance in True online TD(λ) for Different Values of λ.\
