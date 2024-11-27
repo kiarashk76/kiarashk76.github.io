@@ -27,7 +27,7 @@ title: About me
   - <kasirikiarash@ualberta.ca>
 
 #### Resume
-* you can download my [CV](https://kiarashk76.github.io/docs/PlushCV.pdf) here
+* you can download my [CV](https://kiarashk76.github.io/docs/Academic_CV2.pdf) here
 
 
 #### Recreational Activities
