@@ -3,49 +3,31 @@ layout: default
 title: About
 permalink: /
 ---
-{%- assign a = site.author -%}
+{%- assign a = site.data.profile -%}
+{%- assign h = site.data.home -%}
 <section class="hero">
-  <p class="kicker">Hello, I'm Kiarash</p>
-  <h1 class="hero-title">I study how agents learn <em>reusable structure</em>: skills, programs and models of the world.</h1>
-  <div class="prose">
-    <p>
-      I'm a PhD student in Computing Science at the
-      <a href="{{ a.affiliation_url }}">University of Alberta</a>, advised by
-      <a href="https://webdocs.cs.ualberta.ca/~santanad/">Levi Lelis</a>.
-      I work in reinforcement learning, on problems where structure helps an agent generalize:
-      discovering options for hierarchical RL, representing policies as programs, and
-      using LLMs as world models.
-    </p>
-    <p>
-      Before my PhD I was a support researcher at Huawei in Edmonton for two years, working on image-quality
-      assessment, ISP and compiler optimization. I did my MSc at UAlberta with
-      <a href="https://webdocs.cs.ualberta.ca/~mmueller/">Martin Müller</a>, where I studied
-      Monte Carlo Tree Search with imperfect models, and my BSc in Computer Engineering at Iran
-      University of Science and Technology.
-    </p>
-  </div>
-  <div class="interests">
-    <span class="tag">LLM world modeling</span>
-    <span class="tag">Reinforcement learning</span>
-    <span class="tag">Programmatic policy synthesis</span>
-    <span class="tag">Option discovery &amp; hierarchical RL</span>
-  </div>
+  {%- if h.greeting %}<p class="kicker">{{ h.greeting }}</p>{% endif %}
+  {%- if h.headline %}<h1 class="hero-title">{{ h.headline | markdownify | remove: "<p>" | remove: "</p>" | strip }}</h1>{% endif %}
+  <div class="prose">{{ h.bio | markdownify }}</div>
+  {%- if h.interests %}
+  <div class="interests">{% for t in h.interests %}<span class="tag">{{ t }}</span>{% endfor %}</div>
+  {%- endif %}
   <div class="cta">
-    <a class="btn btn-primary" href="{{ a.cv | relative_url }}">{% include icon.html name="download" %}Download CV</a>
-    <a class="btn" href="mailto:{{ a.email }}">{% include icon.html name="mail" %}Get in touch</a>
+    {%- if a.cv_pdf %}<a class="btn btn-primary" href="{{ a.cv_pdf | relative_url }}">{% include icon.html name="download" %}Download CV</a>{% endif %}
+    {%- if a.email %}<a class="btn" href="mailto:{{ a.email }}">{% include icon.html name="mail" %}Get in touch</a>{% endif %}
   </div>
 </section>
 
+{%- if h.news.size > 0 %}
 <section class="section">
-  <div class="section-head">
-    <h2>News</h2>
-  </div>
+  <div class="section-head"><h2>News</h2></div>
   <ul class="news">
-    {%- for n in site.data.news limit: 6 %}
+    {%- for n in h.news limit: 6 %}
     <li><span class="news-date">{{ n.date }}</span><span class="news-text">{{ n.text | markdownify | remove: "<p>" | remove: "</p>" | strip }}</span></li>
     {%- endfor %}
   </ul>
 </section>
+{%- endif %}
 
 <section class="section">
   <div class="section-head">
@@ -53,16 +35,12 @@ permalink: /
     <a class="more" href="{{ '/publications/' | relative_url }}">All publications {% include icon.html name="arrow" %}</a>
   </div>
   <div class="pubs">
-    {%- for p in site.data.publications %}{% if p.selected %}
-      {% include pub.html pub=p %}
-    {%- endif %}{% endfor %}
+    {%- for p in site.data.publications.papers %}{% if p.selected %}{% include pub.html pub=p %}{% endif %}{% endfor %}
   </div>
 </section>
 
 <section class="section">
-  <div class="section-head">
-    <h2>Elsewhere on this site</h2>
-  </div>
+  <div class="section-head"><h2>Elsewhere on this site</h2></div>
   <div class="tiles">
     <a class="tile" href="{{ '/projects/' | relative_url }}">
       <span class="tile-title">Projects</span>
@@ -79,10 +57,9 @@ permalink: /
   </div>
 </section>
 
+{%- if h.outside_research %}
 <section class="section">
   <div class="section-head"><h2>Outside research</h2></div>
-  <div class="prose">
-    <p>I spend time at the gym, play some piano, fall down a lot at the ice rink and lose at
-    <a href="https://www.chess.com/member/kiarash007">chess</a>.</p>
-  </div>
+  <div class="prose">{{ h.outside_research | markdownify }}</div>
 </section>
+{%- endif %}

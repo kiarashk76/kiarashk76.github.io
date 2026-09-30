@@ -1,0 +1,6 @@
+# ─────────────────────────────────────────────────────────────
+#  BLOG PAGE: the intro text only.
+#  Each post is its own file in the _posts folder (see README.md).
+# ─────────────────────────────────────────────────────────────
+intro: Notes on reinforcement learning, planning and research.
+empty_message: "**No posts yet.** The first one is on its way."

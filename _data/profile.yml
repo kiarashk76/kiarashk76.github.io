@@ -1,0 +1,17 @@
+# ─────────────────────────────────────────────────────────────
+#  PROFILE: the sidebar on every page.
+#  Any line you delete here disappears from the site.
+# ─────────────────────────────────────────────────────────────
+name: Kiarash Aghakasiri
+role: PhD Student, Computing Science
+university: University of Alberta
+university_link: https://www.ualberta.ca/en/computing-science/index.html
+location: Edmonton, AB, Canada
+photo: /images/profile.jpg        # square image in the images folder
+
+email: aghakasi@ualberta.ca
+google_scholar: https://scholar.google.com/citations?user=UsE3he0AAAAJ&hl=en
+github: https://github.com/kiarashk76
+linkedin: https://www.linkedin.com/in/kiarash-aghakasiri
+chess: https://www.chess.com/member/kiarash007
+cv_pdf: /files/Kiarash_Aghakasiri_CV.pdf   # replace this PDF to update your CV

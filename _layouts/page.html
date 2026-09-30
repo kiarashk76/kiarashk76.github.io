@@ -1,14 +1,13 @@
 ---
 layout: default
 ---
+{%- assign d = site.data[page.data] -%}
 <article class="page">
-  {%- unless page.hide_title %}
   <header class="page-header">
-    {%- if page.kicker %}<p class="kicker">{{ page.kicker }}</p>{% endif %}
+    {%- if d.subtitle %}<p class="kicker">{{ d.subtitle }}</p>{% endif %}
     <h1 class="page-title">{{ page.title }}</h1>
-    {%- if page.lede %}<p class="lede">{{ page.lede }}</p>{% endif %}
+    {%- if d.intro %}<div class="lede">{{ d.intro | markdownify }}</div>{% endif %}
   </header>
-  {%- endunless %}
   <div class="prose">
     {{ content }}
   </div>

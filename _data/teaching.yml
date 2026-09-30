@@ -1,0 +1,39 @@
+# ─────────────────────────────────────────────────────────────
+#  TEACHING PAGE
+#  Institutions, each with a list of courses (newest first).
+#  "link" and "description" are optional.
+# ─────────────────────────────────────────────────────────────
+intro: Courses I've been a teaching assistant for.
+
+institutions:
+  - name: University of Alberta
+    department: Department of Computing Science
+    courses:
+      - name: Basics of Machine Learning
+        link: https://marthawhite.github.io/mlbasics/
+        description: Statistics for ML (MLE, MAP), optimization, classification and regression. With Martha White (2020, 2021).
+        years: 2020 · 2021 · 2025
+      - name: Foundations of Computation I
+        description: Introductory programming in Python. With Sadaf Ahmed, Joerg Sander and Geoff Hollis (2019–2020).
+        years: 2019 · 2020 · 2024
+
+  - name: Iran University of Science and Technology
+    department: School of Computer Engineering
+    courses:
+      - name: Natural Language Processing
+        link: https://sauleh.github.io/nlp97/
+        description: With Sauleh Eetemadi
+        years: "2019"
+      - name: Computational Intelligence
+        description: With Nasser Mozayani
+        years: "2019"
+      - name: Artificial Intelligence & Expert Systems
+        link: https://iust-courses.github.io/ai97/
+        description: With Mohammad Taher Pilehvar
+        years: "2018"
+      - name: Theory of Automata
+        description: With Hossein Rahmani
+        years: "2017"
+      - name: Foundations of Programming
+        description: With Adel Torkaman Rahmani
+        years: "2016"

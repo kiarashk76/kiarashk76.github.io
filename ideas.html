@@ -1,10 +1,8 @@
 ---
+layout: page
 title: Ideas
 permalink: /ideas/
-kicker: Research directions I'm thinking about
-lede: >-
-  Open questions and possible projects. Some are early, some I'm working on now.
-  If one interests you, email me. I'm always happy to talk.
+data: ideas
 ---
 {%- assign ideas = site.ideas | sort: "date" | reverse -%}
 {%- if ideas.size > 0 %}
@@ -30,6 +28,6 @@ lede: >-
 {%- else %}
 <div class="empty">
   {% include icon.html name="bulb" %}
-  <p><strong>Nothing here yet.</strong> The first ideas are coming soon.</p>
+  <div>{{ site.data.ideas.empty_message | markdownify }}</div>
 </div>
 {%- endif %}

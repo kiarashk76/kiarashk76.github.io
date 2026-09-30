@@ -1,7 +1,8 @@
 ---
+layout: page
 title: Blog
 permalink: /blog/
-lede: Notes on reinforcement learning, planning and research.
+data: blog
 ---
 {%- if site.posts.size > 0 %}
 <div class="post-list">
@@ -18,6 +19,6 @@ lede: Notes on reinforcement learning, planning and research.
 {%- else %}
 <div class="empty">
   {% include icon.html name="pen" %}
-  <p><strong>No posts yet.</strong> The first one is on its way. Subscribe with <a href="{{ '/feed.xml' | relative_url }}">RSS</a> to hear when it's up.</p>
+  <div>{{ site.data.blog.empty_message | markdownify }}</div>
 </div>
 {%- endif %}

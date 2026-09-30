@@ -1,0 +1,9 @@
+# ─────────────────────────────────────────────────────────────
+#  IDEAS PAGE: the intro text only.
+#  Each idea is its own file in the _ideas folder (see README.md).
+# ─────────────────────────────────────────────────────────────
+subtitle: Research directions I'm thinking about
+intro: >-
+  Open questions and possible projects. Some are early, some I'm working on now.
+  If one interests you, email me. I'm always happy to talk.
+empty_message: "**Nothing here yet.** The first ideas are coming soon."

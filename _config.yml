@@ -1,31 +1,14 @@
-# ─────────────────────────────────────────────────────────────
-#  Site settings — edit the values below, then commit & push.
-# ─────────────────────────────────────────────────────────────
+# Site-wide settings. Your content lives in the _data folder (see README.md).
 title: Kiarash Aghakasiri
 description: >-
   PhD student in Computing Science at the University of Alberta, working on
   reinforcement learning, programmatic policies and option discovery.
 url: "https://kiarashk76.github.io"
-baseurl: ""
-lang: en
-
-author:
-  name: Kiarash Aghakasiri
-  role: PhD Student, Computing Science
-  affiliation: University of Alberta
-  affiliation_url: https://www.ualberta.ca/en/computing-science/index.html
-  location: Edmonton, AB, Canada
-  email: aghakasi@ualberta.ca
-  scholar: https://scholar.google.com/citations?user=UsE3he0AAAAJ&hl=en
-  github: kiarashk76
-  linkedin: kiarash-aghakasiri
-  cv: /files/Kiarash_Aghakasiri_CV.pdf
-  avatar: /images/profile.jpg
+author: Kiarash Aghakasiri
 
 markdown: kramdown
 kramdown:
   input: GFM
-  syntax_highlighter: rouge
 permalink: /blog/:year/:month/:title/
 
 collections:
@@ -38,24 +21,11 @@ defaults:
     values: { layout: post }
   - scope: { path: "", type: ideas }
     values: { layout: idea }
-  - scope: { path: "" }
-    values: { layout: page }
 
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
 
-feed:
-  path: /feed.xml
-
 exclude:
   - README.md
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE
-  - tools/
-  - templates/
-  - node_modules/
-  - package.json
-  - package-lock.json

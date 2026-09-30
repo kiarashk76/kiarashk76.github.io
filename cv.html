@@ -1,85 +1,58 @@
 ---
+layout: page
 title: Curriculum Vitae
 permalink: /cv/
-lede: A short version is below. The PDF has everything.
+data: cv
 ---
+{%- assign cv = site.data.cv -%}
+{%- assign pdf = site.data.profile.cv_pdf -%}
+{%- if pdf %}
 <p class="page-actions">
-  <a class="btn btn-primary" href="{{ site.author.cv | relative_url }}" download>{% include icon.html name="download" %}Download PDF</a>
-  <a class="btn" href="{{ site.author.cv | relative_url }}">{% include icon.html name="file" %}Open in browser</a>
+  <a class="btn btn-primary" href="{{ pdf | relative_url }}" download>{% include icon.html name="download" %}Download PDF</a>
+  <a class="btn" href="{{ pdf | relative_url }}">{% include icon.html name="file" %}Open in browser</a>
 </p>
+{%- endif %}
 
+{%- if cv.education %}
 <section class="cv-block">
   <h2 class="group-title">Education</h2>
   <ol class="timeline">
-    <li>
-      <div class="tl-when">2024 – present</div>
-      <div class="tl-body">
-        <h3>PhD, Computing Science</h3>
-        <p class="tl-org">University of Alberta · GPA 4.0/4.0</p>
-        <p>Supervisor: <a href="https://webdocs.cs.ualberta.ca/~santanad/">Levi Lelis</a>. Topics: LLM world modeling, reinforcement learning, programmatic policy synthesis, option discovery and hierarchical RL.</p>
-      </div>
-    </li>
-    <li>
-      <div class="tl-when">2019 – 2022</div>
-      <div class="tl-body">
-        <h3>MSc, Computing Science</h3>
-        <p class="tl-org">University of Alberta · GPA 4.0/4.0</p>
-        <p>Supervisor: <a href="https://webdocs.cs.ualberta.ca/~mmueller/">Martin Müller</a>. Thesis: <a href="https://ualberta.scholaris.ca/items/e9047c16-0ae4-4e4e-ab4b-3cc3e920be95"><em>Monte Carlo Tree Search in the Presence of Model Uncertainty</em></a>.</p>
-      </div>
-    </li>
-    <li>
-      <div class="tl-when">2015 – 2019</div>
-      <div class="tl-body">
-        <h3>BSc, Computer Engineering</h3>
-        <p class="tl-org">Iran University of Science and Technology · GPA 3.87/4.0</p>
-        <p>Supervisors: Nasser Mozayani and Sauleh Eetemadi. Thesis: <em>Image Captioning using Attention Mechanisms for the Farsi Language</em>.</p>
-      </div>
-    </li>
+    {%- for e in cv.education %}
+    <li><div class="tl-when">{{ e.when }}</div>
+      <div class="tl-body"><h3>{{ e.title }}</h3><p class="tl-org">{{ e.where }}</p>{{ e.details | markdownify }}</div></li>
+    {%- endfor %}
   </ol>
 </section>
+{%- endif %}
 
+{%- if cv.experience %}
 <section class="cv-block">
   <h2 class="group-title">Research experience</h2>
   <ol class="timeline">
-    <li>
-      <div class="tl-when">2024 – present</div>
-      <div class="tl-body"><h3>PhD Research Assistant</h3><p class="tl-org">University of Alberta</p>
-      <p>Option discovery with Didec (NeurIPS 2026), and OOD generalization of programmatic vs. neural policies (ICML 2026).</p></div>
-    </li>
-    <li>
-      <div class="tl-when">2022 – 2024</div>
-      <div class="tl-body"><h3>Support Researcher</h3><p class="tl-org">Huawei, Edmonton</p>
-      <p>Multi-modal image-quality assessment (WACV 2026), perceptual colour metric (ICASSP 2024), ISP pipeline optimization, tensor and compiler optimization (DATE 2024).</p></div>
-    </li>
-    <li>
-      <div class="tl-when">Summer 2021</div>
-      <div class="tl-body"><h3>Research Intern</h3><p class="tl-org">Huawei, Edmonton</p>
-      <p>Heteroscedastic regression for Halide tensor optimization.</p></div>
-    </li>
-    <li>
-      <div class="tl-when">2019 – 2022</div>
-      <div class="tl-body"><h3>MSc Research Assistant</h3><p class="tl-org">University of Alberta</p>
-      <p>UA-MCTS for planning with inaccurate transition models (AAAI 2024).</p></div>
-    </li>
+    {%- for e in cv.experience %}
+    <li><div class="tl-when">{{ e.when }}</div>
+      <div class="tl-body"><h3>{{ e.title }}</h3><p class="tl-org">{{ e.where }}</p>{{ e.details | markdownify }}</div></li>
+    {%- endfor %}
   </ol>
 </section>
+{%- endif %}
 
+{%- if cv.awards %}
 <section class="cv-block">
   <h2 class="group-title">Honors &amp; awards</h2>
   <ul class="rows">
-    <li class="row"><div class="row-main"><h3 class="row-title">Recruitment Award, $5,000 CAD</h3><p class="row-sub">Department of Computing Science, University of Alberta</p></div><div class="row-when">2024</div></li>
-    <li class="row"><div class="row-main"><h3 class="row-title">Ranked 2nd in the graduating BSc class</h3><p class="row-sub">Department of Computer Engineering, IUST</p></div><div class="row-when">2019</div></li>
-    <li class="row"><div class="row-main"><h3 class="row-title">Ranked 1,170 of 181,000</h3><p class="row-sub">Iranian National Graduate School Entrance Examination</p></div><div class="row-when">2015</div></li>
-    <li class="row"><div class="row-main"><h3 class="row-title">Member, NODET</h3><p class="row-sub">National Organization for Development of Exceptional Talents</p></div><div class="row-when">since 2010</div></li>
+    {%- for w in cv.awards %}
+    <li class="row"><div class="row-main"><h3 class="row-title">{{ w.title }}</h3><p class="row-sub">{{ w.where }}</p></div><div class="row-when">{{ w.when }}</div></li>
+    {%- endfor %}
   </ul>
 </section>
+{%- endif %}
 
+{%- if cv.skills %}
 <section class="cv-block">
   <h2 class="group-title">Skills</h2>
   <dl class="skills">
-    <dt>Research</dt><dd>Reinforcement learning, hierarchical RL, Monte Carlo Tree Search, option discovery, program synthesis, foundation models, world modeling, Bayesian optimization, computer vision</dd>
-    <dt>ML tooling</dt><dd>PyTorch, TensorFlow, Ray RLlib, Optuna, Weights &amp; Biases, scikit-learn</dd>
-    <dt>Languages</dt><dd>Python, C++, Bash</dd>
-    <dt>Systems</dt><dd>Linux, Docker, Git, Slurm, Jupyter</dd>
+    {%- for s in cv.skills %}<dt>{{ s.area }}</dt><dd>{{ s.list }}</dd>{% endfor %}
   </dl>
 </section>
+{%- endif %}

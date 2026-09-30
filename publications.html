@@ -1,24 +1,16 @@
 ---
+layout: page
 title: Publications
 permalink: /publications/
-lede: "The full list is on Google Scholar. * marks equal contribution."
+data: publications
 ---
-{%- assign conf = site.data.publications | where: "type", "conference" -%}
-{%- assign jour = site.data.publications | where: "type", "journal" -%}
-{%- assign pre = site.data.publications | where: "type", "preprint" -%}
-<p class="page-actions">
-  <a class="btn" href="{{ site.author.scholar }}">{% include icon.html name="scholar" %}Google Scholar</a>
-</p>
-
-{%- if pre.size > 0 %}
-<h2 class="group-title">Preprints &amp; under review</h2>
-<div class="pubs">{% for p in pre %}{% include pub.html pub=p %}{% endfor %}</div>
+{%- assign papers = site.data.publications.papers -%}
+{%- assign pre = papers | where: "type", "preprint" -%}
+{%- assign conf = papers | where: "type", "conference" -%}
+{%- assign jour = papers | where: "type", "journal" -%}
+{%- if site.data.profile.google_scholar %}
+<p class="page-actions"><a class="btn" href="{{ site.data.profile.google_scholar }}">{% include icon.html name="scholar" %}Google Scholar</a></p>
 {%- endif %}
-
-<h2 class="group-title">Conference papers</h2>
-<div class="pubs">{% for p in conf %}{% include pub.html pub=p %}{% endfor %}</div>
-
-{%- if jour.size > 0 %}
-<h2 class="group-title">Journal papers</h2>
-<div class="pubs">{% for p in jour %}{% include pub.html pub=p %}{% endfor %}</div>
-{%- endif %}
+{%- if pre.size > 0 %}<h2 class="group-title">Preprints &amp; under review</h2><div class="pubs">{% for p in pre %}{% include pub.html pub=p %}{% endfor %}</div>{% endif %}
+{%- if conf.size > 0 %}<h2 class="group-title">Conference papers</h2><div class="pubs">{% for p in conf %}{% include pub.html pub=p %}{% endfor %}</div>{% endif %}
+{%- if jour.size > 0 %}<h2 class="group-title">Journal papers</h2><div class="pubs">{% for p in jour %}{% include pub.html pub=p %}{% endfor %}</div>{% endif %}

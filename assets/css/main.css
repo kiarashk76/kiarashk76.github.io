@@ -128,7 +128,7 @@ p { margin: 0 0 1em; }
 .group-head { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 4px 16px; margin: 44px 0 16px; padding-bottom: 10px; border-bottom: 1px solid var(--line); }
 .group-head .group-title { margin: 0; }
 .group-blurb { color: var(--muted); font-size: .9rem; margin: 0; }
-.content > .group-title:first-of-type, .content section:first-of-type .group-head, .project-group:first-child .group-head, .page .prose > .group-title:first-child { margin-top: 0; }
+.project-group:first-child .group-head { margin-top: 0; }
 
 /* ---------- tags / chips / buttons ---------- */
 .tags, .interests { display: flex; flex-wrap: wrap; gap: 6px; }
@@ -310,3 +310,5 @@ p { margin: 0 0 1em; }
 }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
 @media print { .masthead, .footer, .profile-links { display: none; } .layout { display: block; } }
+.lede p, .card-text p { margin: 0; }
+.lede p + p { margin-top: .6em; }

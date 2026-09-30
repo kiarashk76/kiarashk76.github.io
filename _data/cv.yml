@@ -1,0 +1,69 @@
+# ─────────────────────────────────────────────────────────────
+#  CV PAGE (short HTML version; the full CV is the PDF set in
+#  profile.yml). Text fields accept Markdown.
+# ─────────────────────────────────────────────────────────────
+intro: A short version is below. The PDF has everything.
+
+education:
+  - when: 2024 – present
+    title: PhD, Computing Science
+    where: University of Alberta · GPA 4.0/4.0
+    details: >-
+      Supervisor: [Levi Lelis](https://webdocs.cs.ualberta.ca/~santanad/). Topics: LLM world modeling,
+      reinforcement learning, programmatic policy synthesis, option discovery and hierarchical RL.
+  - when: 2019 – 2022
+    title: MSc, Computing Science
+    where: University of Alberta · GPA 4.0/4.0
+    details: >-
+      Supervisor: [Martin Müller](https://webdocs.cs.ualberta.ca/~mmueller/). Thesis:
+      [*Monte Carlo Tree Search in the Presence of Model Uncertainty*](https://ualberta.scholaris.ca/items/e9047c16-0ae4-4e4e-ab4b-3cc3e920be95).
+  - when: 2015 – 2019
+    title: BSc, Computer Engineering
+    where: Iran University of Science and Technology · GPA 3.87/4.0
+    details: >-
+      Supervisors: Nasser Mozayani and Sauleh Eetemadi. Thesis: *Image Captioning using Attention
+      Mechanisms for the Farsi Language*.
+
+experience:
+  - when: 2024 – present
+    title: PhD Research Assistant
+    where: University of Alberta
+    details: Option discovery with Didec (NeurIPS 2026), and OOD generalization of programmatic vs. neural policies (ICML 2026).
+  - when: 2022 – 2024
+    title: Support Researcher
+    where: Huawei, Edmonton
+    details: >-
+      Multi-modal image-quality assessment (WACV 2026), perceptual colour metric (ICASSP 2024),
+      ISP pipeline optimization, tensor and compiler optimization (DATE 2024).
+  - when: Summer 2021
+    title: Research Intern
+    where: Huawei, Edmonton
+    details: Heteroscedastic regression for Halide tensor optimization.
+  - when: 2019 – 2022
+    title: MSc Research Assistant
+    where: University of Alberta
+    details: UA-MCTS for planning with inaccurate transition models (AAAI 2024).
+
+awards:
+  - title: Recruitment Award, $5,000 CAD
+    where: Department of Computing Science, University of Alberta
+    when: "2024"
+  - title: Ranked 2nd in the graduating BSc class
+    where: Department of Computer Engineering, IUST
+    when: "2019"
+  - title: Ranked 1,170 of 181,000
+    where: Iranian National Graduate School Entrance Examination
+    when: "2015"
+  - title: Member, NODET
+    where: National Organization for Development of Exceptional Talents
+    when: since 2010
+
+skills:
+  - area: Research
+    list: Reinforcement learning, hierarchical RL, Monte Carlo Tree Search, option discovery, program synthesis, foundation models, world modeling, Bayesian optimization, computer vision
+  - area: ML tooling
+    list: PyTorch, TensorFlow, Ray RLlib, Optuna, Weights & Biases, scikit-learn
+  - area: Languages
+    list: Python, C++, Bash
+  - area: Systems
+    list: Linux, Docker, Git, Slurm, Jupyter

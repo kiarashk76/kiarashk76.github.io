@@ -1,0 +1,38 @@
+# ─────────────────────────────────────────────────────────────
+#  HOME PAGE (About)
+#  Text fields accept Markdown: **bold**, *italic*, [link](https://...)
+# ─────────────────────────────────────────────────────────────
+greeting: Hello, I'm Kiarash
+headline: I study how agents learn *reusable structure*, like skills, programs and models of the world.
+
+bio: |
+  I'm a PhD student in Computing Science at the [University of Alberta](https://www.ualberta.ca/en/computing-science/index.html),
+  advised by [Levi Lelis](https://webdocs.cs.ualberta.ca/~santanad/). I work in reinforcement learning,
+  on problems where structure helps an agent generalize: discovering options for hierarchical RL,
+  representing policies as programs, and using LLMs as world models.
+
+  Before my PhD I was a support researcher at Huawei in Edmonton for two years, working on image-quality
+  assessment, ISP and compiler optimization. I did my MSc at UAlberta with
+  [Martin Müller](https://webdocs.cs.ualberta.ca/~mmueller/), where I studied Monte Carlo Tree Search
+  with imperfect models, and my BSc in Computer Engineering at Iran University of Science and Technology.
+
+interests:
+  - LLM world modeling
+  - Reinforcement learning
+  - Programmatic policy synthesis
+  - Option discovery & hierarchical RL
+
+# Newest first. The home page shows the first 6.
+news:
+  - date: "2026"
+    text: Didec (option discovery by decomposing neural policies) accepted at **NeurIPS 2026**.
+  - date: "2026"
+    text: Our study of OOD generalization in programmatic RL accepted at **ICML 2026**.
+  - date: "2026"
+    text: ScoreNet accepted at **WACV 2026**.
+  - date: "2024"
+    text: Started my PhD at the University of Alberta with Levi Lelis, and received the department's Recruitment Award.
+  - date: "2024"
+    text: UA-MCTS, from my MSc thesis, published at **AAAI 2024**.
+
+# Papers marked "selected: true" in publications.yml appear on the home page.

@@ -1,21 +1,20 @@
-{%- assign a = site.author -%}
+{%- assign a = site.data.profile -%}
 <aside class="profile" aria-label="Profile">
-  <img class="avatar" src="{{ a.avatar | relative_url }}" alt="Portrait of {{ a.name }}" width="560" height="560">
+  <img class="avatar" src="{{ a.photo | relative_url }}" alt="Portrait of {{ a.name }}" width="560" height="560">
   <div class="profile-text">
     <h2 class="profile-name">{{ a.name }}</h2>
-    <p class="profile-role">{{ a.role }}</p>
+    {%- if a.role %}<p class="profile-role">{{ a.role }}</p>{% endif %}
     <ul class="profile-meta">
-      <li>{% include icon.html name="uni" %}<a href="{{ a.affiliation_url }}">{{ a.affiliation }}</a></li>
-      <li>{% include icon.html name="pin" %}<span>{{ a.location }}</span></li>
+      {%- if a.university %}<li>{% include icon.html name="uni" %}{% if a.university_link %}<a href="{{ a.university_link }}">{{ a.university }}</a>{% else %}<span>{{ a.university }}</span>{% endif %}</li>{% endif %}
+      {%- if a.location %}<li>{% include icon.html name="pin" %}<span>{{ a.location }}</span></li>{% endif %}
     </ul>
   </div>
   <ul class="profile-links">
-    <li><a href="mailto:{{ a.email }}" title="Email">{% include icon.html name="mail" %}<span>Email</span></a></li>
-    <li><a href="{{ a.scholar }}" title="Google Scholar">{% include icon.html name="scholar" %}<span>Scholar</span></a></li>
-    <li><a href="https://github.com/{{ a.github }}" title="GitHub">{% include icon.html name="github" %}<span>GitHub</span></a></li>
-    {%- if a.linkedin %}
-    <li><a href="https://www.linkedin.com/in/{{ a.linkedin }}" title="LinkedIn">{% include icon.html name="linkedin" %}<span>LinkedIn</span></a></li>
-    {%- endif %}
-    <li><a href="{{ a.cv | relative_url }}" title="CV (PDF)">{% include icon.html name="file" %}<span>CV</span></a></li>
+    {%- if a.email %}<li><a href="mailto:{{ a.email }}">{% include icon.html name="mail" %}<span>Email</span></a></li>{% endif %}
+    {%- if a.google_scholar %}<li><a href="{{ a.google_scholar }}">{% include icon.html name="scholar" %}<span>Scholar</span></a></li>{% endif %}
+    {%- if a.github %}<li><a href="{{ a.github }}">{% include icon.html name="github" %}<span>GitHub</span></a></li>{% endif %}
+    {%- if a.linkedin %}<li><a href="{{ a.linkedin }}">{% include icon.html name="linkedin" %}<span>LinkedIn</span></a></li>{% endif %}
+    {%- if a.chess %}<li><a href="{{ a.chess }}">{% include icon.html name="chess" %}<span>Chess</span></a></li>{% endif %}
+    {%- if a.cv_pdf %}<li><a href="{{ a.cv_pdf | relative_url }}">{% include icon.html name="file" %}<span>CV</span></a></li>{% endif %}
   </ul>
 </aside>
