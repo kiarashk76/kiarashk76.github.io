@@ -1,0 +1,35 @@
+---
+title: Ideas
+permalink: /ideas/
+kicker: Research directions I'm thinking about
+lede: >-
+  Open questions and possible projects. Some are early, some I'm working on now.
+  If one interests you, email me. I'm always happy to talk.
+---
+{%- assign ideas = site.ideas | sort: "date" | reverse -%}
+{%- if ideas.size > 0 %}
+<div class="legend">
+  <span class="status status-seed">seed</span> a rough thought
+  <span class="status status-exploring">exploring</span> reading &amp; small experiments
+  <span class="status status-active">active</span> working on it
+  <span class="status status-parked">parked</span> on hold
+</div>
+<div class="idea-list">
+  {%- for i in ideas %}
+  <a class="idea-card" href="{{ i.url | relative_url }}">
+    <div class="idea-top">
+      <span class="status status-{{ i.status | default: 'seed' | slugify }}">{{ i.status | default: "seed" }}</span>
+      <span class="meta">{{ i.date | date: "%b %Y" }}</span>
+    </div>
+    <h3 class="idea-title">{{ i.title }}</h3>
+    {%- if i.summary %}<p class="idea-summary">{{ i.summary }}</p>{% endif %}
+    {%- if i.tags.size > 0 %}<div class="tags">{% for t in i.tags %}<span class="tag">{{ t }}</span>{% endfor %}</div>{% endif %}
+  </a>
+  {%- endfor %}
+</div>
+{%- else %}
+<div class="empty">
+  {% include icon.html name="bulb" %}
+  <p><strong>Nothing here yet.</strong> The first ideas are coming soon.</p>
+</div>
+{%- endif %}

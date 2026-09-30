@@ -1,0 +1,22 @@
+<header class="masthead">
+  <div class="masthead-inner">
+    <a class="brand" href="{{ '/' | relative_url }}">{{ site.author.name }}</a>
+    <nav class="nav" id="site-nav" aria-label="Main">
+      {%- for item in site.data.navigation -%}
+        {%- assign active = false -%}
+        {%- if item.url == "/" -%}
+          {%- if page.url == "/" or page.url == "/index.html" -%}{%- assign active = true -%}{%- endif -%}
+        {%- elsif page.url contains item.url -%}{%- assign active = true -%}{%- endif -%}
+        <a href="{{ item.url | relative_url }}"{% if active %} class="active" aria-current="page"{% endif %}>{{ item.title }}</a>
+      {%- endfor -%}
+    </nav>
+    <div class="masthead-actions">
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="Toggle dark mode">
+        <span class="show-light">{% include icon.html name="moon" %}</span><span class="show-dark">{% include icon.html name="sun" %}</span>
+      </button>
+      <button class="icon-btn menu-btn" id="menu-toggle" type="button" aria-label="Open menu" aria-controls="site-nav" aria-expanded="false">
+        <span class="i-open">{% include icon.html name="menu" %}</span><span class="i-close">{% include icon.html name="close" %}</span>
+      </button>
+    </div>
+  </div>
+</header>

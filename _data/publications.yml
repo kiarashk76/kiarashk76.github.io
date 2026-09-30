@@ -1,0 +1,84 @@
+# ─────────────────────────────────────────────────────────────
+#  Publications. Newest first. To add a paper, copy a block.
+#  - authors: add "*" after a name for equal contribution
+#  - selected: true  → also shown on the home page
+#  - type: conference | journal | preprint
+#  - links: any number of {name, url}
+# ─────────────────────────────────────────────────────────────
+- id: C6
+  type: conference
+  title: Learning Reusable Options by Decomposing Neural Policies
+  authors: [Parnian Behdin, Reza Abdollahzadeh, Kiarash Aghakasiri, Levi Lelis]
+  venue: NeurIPS
+  venue_full: Advances in Neural Information Processing Systems
+  year: 2026
+  selected: true
+  tldr: Didec, a neural option-discovery method based on policy masking.
+  links:
+    - { name: Paper, url: "https://openreview.net/pdf?id=d3ZwoIVzhT" }
+
+- id: C5
+  type: conference
+  title: Revisiting OOD Generalization in Programmatic RL
+  authors: [Amirhossein Rajabpour, Kiarash Aghakasiri, Sandra Zilles, Levi Lelis]
+  venue: ICML
+  venue_full: International Conference on Machine Learning
+  year: 2026
+  selected: true
+  tldr: Re-evaluates prior claims that programmatic policies generalize better than neural policies on out-of-distribution tasks.
+  links:
+    - { name: Poster, url: "https://icml.cc/virtual/2026/poster/61736" }
+
+- id: C4
+  type: conference
+  title: "ScoreNet: Netting Lightweight Quality Scores for Better Visual Assessment with Large Multi-Modality Models"
+  authors: [Bahador Rashidi, Kiarash Aghakasiri, Shupei Zhang, Amirmohsen Sattarifard, Yue Zhang, Chao Gao]
+  venue: WACV
+  venue_full: IEEE/CVF Winter Conference on Applications of Computer Vision
+  year: 2026
+  tldr: An image-quality assessment metric built on multi-modal foundation models, surpassing state-of-the-art baselines.
+  links: []
+
+- id: C3
+  type: conference
+  title: Monte Carlo Tree Search in the Presence of Transition Uncertainty
+  authors: [Farnaz Kohankhaki*, Kiarash Aghakasiri*, Hongming Zhang, Ting-Han Wei, Chao Gao, Martin Müller]
+  venue: AAAI
+  venue_full: AAAI Conference on Artificial Intelligence
+  year: 2024
+  selected: true
+  tldr: UA-MCTS adapts Monte Carlo Tree Search to inaccurate transition models. Based on my MSc thesis.
+  links:
+    - { name: Paper, url: "https://ojs.aaai.org/index.php/AAAI/article/view/29994" }
+    - { name: Thesis, url: "https://ualberta.scholaris.ca/items/e9047c16-0ae4-4e4e-ab4b-3cc3e920be95" }
+
+- id: C2
+  type: conference
+  title: A Multi-Scale Objective Function for Camera Color Correction
+  authors: [Bahador Rashidi, Kiarash Aghakasiri, Chao Gao, Shuting Zhang, Yue Zhang, Ying Liu, Fengyu Sun]
+  venue: ICASSP
+  venue_full: IEEE International Conference on Acoustics, Speech and Signal Processing
+  year: 2024
+  tldr: A human-aligned colour-correction objective that addresses inconsistencies in ΔE.
+  links:
+    - { name: Paper, url: "https://ieeexplore.ieee.org/abstract/document/10448247" }
+
+- id: C1
+  type: conference
+  title: "CASCO: Cascaded Co-Optimization for Neural Network Acceleration"
+  authors: [Bahador Rashidi, Shan Lu, Kiarash Aghakasiri, Chao Gao, Fred Xuefei Han, Zhisheng Wang, Laiyuan Gong, Fengyu Sun]
+  venue: DATE
+  venue_full: Design, Automation & Test in Europe Conference
+  year: 2024
+  links:
+    - { name: PDF, url: "https://past.date-conference.com/proceedings-archive/2024/DATA/410_pdf_upload.pdf" }
+
+- id: J1
+  type: journal
+  title: "Tarvajeh: Word Association Norms for Persian Words"
+  authors: [Fatemeh Karimkhani, Hossein Rahmani, Arezoo Zare, Kiarash Aghakasiri, Raana Sahebnassagh]
+  venue: JPR
+  venue_full: Journal of Psycholinguistic Research
+  year: 2021
+  links:
+    - { name: Paper, url: "https://link.springer.com/article/10.1007/s10936-020-09751-2" }

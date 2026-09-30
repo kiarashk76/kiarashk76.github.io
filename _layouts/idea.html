@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<article class="page idea">
+  <header class="page-header">
+    <p class="kicker"><a href="{{ '/ideas/' | relative_url }}">Ideas</a> · <span class="status status-{{ page.status | default: 'seed' | slugify }}">{{ page.status | default: "seed" }}</span></p>
+    <h1 class="page-title">{{ page.title }}</h1>
+    {%- if page.summary %}<p class="lede">{{ page.summary }}</p>{% endif %}
+    <p class="meta">Started {{ page.date | date: "%B %Y" }}{% if page.updated %} · Updated {{ page.updated | date: "%B %-d, %Y" }}{% endif %}</p>
+    {%- if page.tags.size > 0 %}<div class="tags">{% for t in page.tags %}<span class="tag">{{ t }}</span>{% endfor %}</div>{% endif %}
+  </header>
+  <div class="prose">
+    {{ content }}
+  </div>
+  <p class="back"><a href="{{ '/ideas/' | relative_url }}">← All ideas</a></p>
+</article>

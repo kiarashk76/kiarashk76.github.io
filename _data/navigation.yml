@@ -1,0 +1,15 @@
+# Top navigation. Reorder or remove items here.
+- title: About
+  url: /
+- title: Publications
+  url: /publications/
+- title: Projects
+  url: /projects/
+- title: Ideas
+  url: /ideas/
+- title: Blog
+  url: /blog/
+- title: Teaching
+  url: /teaching/
+- title: CV
+  url: /cv/

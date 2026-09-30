@@ -1,0 +1,116 @@
+# ─────────────────────────────────────────────────────────────
+#  Projects, grouped. Each item: title, period, where, summary,
+#  tags, and optional pub (publication id) and links.
+# ─────────────────────────────────────────────────────────────
+- group: PhD research
+  blurb: University of Alberta, with Levi Lelis
+  items:
+    - title: "Didec: options from decomposed neural policies"
+      period: 2024 – 2026
+      where: University of Alberta
+      summary: >-
+        Helped implement Didec, which discovers reusable options (temporally extended skills)
+        by masking parts of a trained neural policy.
+      tags: [Hierarchical RL, Option discovery]
+      pub: C6
+    - title: Programmatic vs. neural policies out of distribution
+      period: 2024 – 2026
+      where: University of Alberta
+      summary: >-
+        A careful re-evaluation of the claim that programmatic policies generalize better than
+        neural ones on out-of-distribution tasks.
+      tags: [Programmatic RL, Generalization]
+      pub: C5
+
+- group: Industry research
+  blurb: Huawei, Edmonton, 2021 – 2024
+  items:
+    - title: Multi-modal image quality assessment
+      period: 2022 – 2024
+      where: Huawei
+      summary: >-
+        Designed a quality metric that builds on multi-modal foundation models (CLIP-IQA,
+        Q-Align) and outperforms state-of-the-art baselines.
+      tags: [Computer vision, Foundation models]
+      pub: C4
+    - title: Perceptual colour-correction metric
+      period: 2022 – 2024
+      where: Huawei
+      summary: >-
+        A human-aligned colour metric that fixes inconsistencies in ΔE. Using it in the on-device
+        colour-correction pipeline improved performance by more than 20%.
+      tags: [Imaging, Optimization]
+      pub: C2
+    - title: ISP pipeline optimization
+      period: 2022 – 2024
+      where: Huawei
+      summary: >-
+        Tuned image-signal-processing pipelines for edge devices with genetic algorithms,
+        sample-efficient Bayesian optimization and reinforcement learning.
+      tags: [Bayesian optimization, RL]
+    - title: Tensor & compiler optimization
+      period: 2021 – 2024
+      where: Huawei
+      summary: >-
+        Built a fusion-aware component for the tensor-optimization pipeline (at least 10% better)
+        and applied Genetic MCTS to CompilerGym tasks. As an intern, modelled uncertainty in
+        Halide optimization with heteroscedastic regression.
+      tags: [MCTS, Systems]
+      pub: C1
+
+- group: MSc research
+  blurb: University of Alberta, with Martin Müller, 2019 – 2022
+  items:
+    - title: "UA-MCTS: planning with an imperfect model"
+      period: 2019 – 2022
+      where: University of Alberta
+      summary: >-
+        Changed each component of MCTS so it takes errors in the transition model into account.
+        With a good error estimate it can match MCTS with a perfect simulator.
+      tags: [MCTS, Model-based RL]
+      pub: C3
+      links:
+        - { name: Thesis, url: "https://ualberta.scholaris.ca/items/e9047c16-0ae4-4e4e-ab4b-3cc3e920be95" }
+    - title: Is heteroscedastic regression a sound way to model uncertainty?
+      where: RL I, Martha White
+      summary: Studied whether heteroscedastic regression gives a reliable estimate of model uncertainty.
+      tags: [Uncertainty]
+      links:
+        - { name: Report, url: "/docs/Heteroscedastic_Regression___ICML_submission_v1-compressed.pdf" }
+    - title: Step-size sensitivity of true online TD(λ)
+      where: RL II, Richard Sutton
+      summary: How step size and performance interact for different values of λ.
+      tags: [TD learning]
+      links:
+        - { name: Report, url: "/docs/true-online-td-lambda.pdf" }
+    - title: Variance reduction for off-policy evaluation
+      where: Intro to ML, Martha White
+      summary: Applied variance-reduction methods to off-policy policy evaluation.
+      tags: [Off-policy RL]
+      links:
+        - { name: Report, url: "/docs/ML.pdf" }
+    - title: Named-entity recognition on out-of-vocabulary words
+      where: Deep Learning for NLP, Lili Mou
+      summary: How sequence-tagging models handle words they have never seen.
+      tags: [NLP]
+      links:
+        - { name: Report, url: "/docs/DL4NLP.pdf" }
+
+- group: Earlier work
+  blurb: BSc, Iran University of Science and Technology, 2015 – 2019
+  items:
+    - title: Image captioning in Persian
+      period: 2019
+      where: BSc thesis
+      summary: >-
+        Translated MS-COCO captions into Persian and trained an attention-based
+        (Show, Attend and Tell) captioning model on them.
+      tags: [Vision & language]
+      links:
+        - { name: Thesis, url: "/docs/Thesis_for_Iran_University_of_Science_and_Technology.pdf" }
+    - title: "Tarvajeh: Persian word associations"
+      period: 2018
+      where: Data Mining Lab, IUST
+      summary: Collected and analysed a large word-association dataset for Persian through a survey website.
+      tags: [Cognitive science, Data]
+      pub: J1

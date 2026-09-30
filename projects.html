@@ -1,0 +1,31 @@
+---
+title: Projects
+permalink: /projects/
+lede: Research I've worked on, most recent first. Items with a paper link to it.
+---
+{%- for g in site.data.projects %}
+<section class="project-group">
+  <div class="group-head">
+    <h2 class="group-title">{{ g.group }}</h2>
+    {%- if g.blurb %}<p class="group-blurb">{{ g.blurb }}</p>{% endif %}
+  </div>
+  <div class="cards">
+    {%- for it in g.items %}
+    <article class="card">
+      <p class="card-meta">{{ it.where }}{% if it.period %} · {{ it.period }}{% endif %}</p>
+      <h3 class="card-title">{{ it.title }}</h3>
+      <p class="card-text">{{ it.summary }}</p>
+      <div class="card-foot">
+        {%- if it.tags %}<div class="tags">{% for t in it.tags %}<span class="tag">{{ t }}</span>{% endfor %}</div>{% endif %}
+        <div class="chips">
+          {%- if it.pub %}{% assign pp = site.data.publications | where: "id", it.pub | first %}
+          {%- if pp %}<a class="chip chip-accent" href="{{ '/publications/' | relative_url }}#{{ pp.id }}">{{ pp.venue }} {{ pp.year }}</a>{% endif %}
+          {%- endif %}
+          {%- for l in it.links %}<a class="chip" href="{{ l.url | relative_url }}">{{ l.name }}</a>{% endfor %}
+        </div>
+      </div>
+    </article>
+    {%- endfor %}
+  </div>
+</section>
+{%- endfor %}
