@@ -31,7 +31,7 @@ papers:
     selected: true
     tldr: Re-evaluates prior claims that programmatic policies generalize better than neural policies on out-of-distribution tasks.
     links:
-      - { name: Poster, url: "https://icml.cc/virtual/2026/poster/61736" }
+      - { name: Paper, url: "https://openreview.net/pdf?id=nLc5wTYX1p" }
 
   - id: C4
     type: conference
